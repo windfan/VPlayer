@@ -1,5 +1,4 @@
 package application;
-//test
 import java.io.File;
 import java.net.MalformedURLException;
 
@@ -29,8 +28,7 @@ public class Main extends Application {
 		
 		fileChooser = new FileChooser();
 		
-//		double w = primaryStage.getWidth();
-//		double h = primaryStage.getHeight();
+
 		
 		open.setOnAction(new EventHandler<ActionEvent>() {
 			public void handle(ActionEvent e){
