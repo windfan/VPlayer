@@ -1,7 +1,6 @@
 package application;
 import java.io.File;
 import java.net.MalformedURLException;
-
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -27,9 +26,7 @@ public class Main extends Application {
 		menu.getMenus().add(fileBar);
 		
 		fileChooser = new FileChooser();
-		
-
-		
+				
 		open.setOnAction(new EventHandler<ActionEvent>() {
 			public void handle(ActionEvent e){
 				player.player.pause();

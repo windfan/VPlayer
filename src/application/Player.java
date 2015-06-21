@@ -31,14 +31,5 @@ public class Player extends BorderPane {
 		view.setFitWidth(width);
 		view.setFitHeight(height);
 		player.play();
-//		player.setOnReady(new Runnable(){
-//			@Override
-//			public void run(){
-//				int w = player.getMedia().getWidth();
-//				int h = player.getMedia().getHeight();
-//				view.setFitWidth(w);
-//				view.setFitHeight(h);
-//			}
-//		});
 	}
 }
