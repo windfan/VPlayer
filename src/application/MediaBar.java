@@ -23,8 +23,8 @@ public class MediaBar extends HBox{
 	Slider vol = new Slider();
 	
 	Button playButton = new Button("||");
-	Image fullScreenIcon = new Image(getClass().getResourceAsStream("fullscreenicon.png"));
-	Button fullScreenButton = new Button("", new ImageView(fullScreenIcon));
+//	Image fullScreenIcon = new Image(getClass().getResourceAsStream("fullscreenicon.png"));
+//	Button fullScreenButton = new Button("", new ImageView(fullScreenIcon));
 	
 	Label volume = new Label("Volume: ");
 	
@@ -43,13 +43,14 @@ public class MediaBar extends HBox{
 		HBox.setHgrow(time, Priority.ALWAYS);
 		playButton.setPrefHeight(30);
 		playButton.setPrefWidth(30);
-		fullScreenButton.setPrefWidth(30);
-		fullScreenButton.setPrefHeight(30);
+//		fullScreenButton.setPrefWidth(30);
+//		fullScreenButton.setPrefHeight(30);
 		getChildren().add(playButton);
 		getChildren().add(time);
 		getChildren().add(volume);
 		getChildren().add(vol);
-		getChildren().add(fullScreenButton);
+//		getChildren().add(fullScreenButton);
+		
 		playButton.setOnAction(new EventHandler<ActionEvent>(){
 			public void handle(ActionEvent e) {
 				Status status = player.getStatus();

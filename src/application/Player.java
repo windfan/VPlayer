@@ -12,7 +12,7 @@ public class Player extends BorderPane {
 	MediaView view;
 	Pane mpane;
 	MediaBar bar;
-	public Player(String file, double width, double height){
+	public Player(String file){
 		media = new Media(file);
 		player = new MediaPlayer(media);
 		view = new MediaView(player);
@@ -28,8 +28,18 @@ public class Player extends BorderPane {
 		
 		setStyle("-fx-background-color: #bfc2c7");
 		
-		view.setFitWidth(width);
-		view.setFitHeight(height);
+		view.setFitWidth(640);
+		view.setFitHeight(420);
 		player.play();
 	}
+	public void fullScreen() {
+		view.setFitWidth(1440);
+		view.setFitHeight(900);		
+	}
+
+	public void fullScreenOff() {
+		view.setFitWidth(640);
+		view.setFitHeight(420);		
+	}
+	
 }
